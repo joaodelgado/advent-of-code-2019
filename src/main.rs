@@ -5,6 +5,7 @@ use std::io::Read;
 use std::time::Instant;
 
 mod day01;
+mod day02;
 
 pub trait Day<T1, T2>
 where
@@ -60,6 +61,7 @@ fn main() {
 
     match day {
         01 => day01::Day01::run(part, &input),
+        02 => day02::Day02::run(part, &input),
         _ => panic!("Unsupported day {}", day),
     };
 }
